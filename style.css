@@ -284,6 +284,43 @@ a:hover {
     width: 100%;
     height: 100%;
 }
+#bg2 {
+    background-image: url(zona-norte.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bg3 {
+    background-image: url(zona-leste-sp-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bg4 {
+    background-image: url(zona-oeste-sp-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bg5 {
+    background-image: url(centro-sp.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bg6 {
+    background-image: url(interior.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bg7 {
+    background-image: url(litoral-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
 
 .pai:hover .filho {
     transition: .9s;
