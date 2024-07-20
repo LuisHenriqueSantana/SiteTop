@@ -121,6 +121,79 @@ a:hover {
     color: greenyellow;
 }
 
+.fundo {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    bottom: 100px;
+}
+
+.back {
+    width: 90%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    top: 20px;
+    margin: auto;
+}
+
+.block {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 90%;
+    top: 5%;
+    background-color: white;
+}
+
+#block {
+    border: 1px dotted rgb(0, 0, 0);
+    border-width:0 1px 0 1px ;    
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    background-color: #030F27; /* Cor de fundo do ícone */
+    border-radius: 100%;
+    padding: 33px 35px 33px 35px; /* Ajuste do espaçamento interno */
+}
+
+.e-font-icon-svg {
+    position: relative;
+    top: 2px;
+    left: 3px;
+    height: 40px;
+    width: 40px;
+    fill: white;
+}
+
+.texto2 {
+    display: inline-block;
+    width: 50%;
+}
+
+.titulo {
+    font-size: 26px;
+}
+
+.desc {
+    font-size: 16px;
+}
+
 .avo {
     text-align: center;
     margin: auto;
@@ -248,6 +321,44 @@ a:hover {
         color: black;
         padding: 20px;
         width: 70%;
+        font-size: 10px;
+    }
+
+    .fundo {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+    }
+
+    .back {
+        width: 90%;
+        background-color: white;
+        height: 80%;
+        position: relative;
+        margin: auto;
+    }
+
+    .block {
+        position: relative;
+        display: block;
+        width: 90%;
+        height: 30%;
+        top: 5%;
+        background-color: white;
+        margin: auto;
+    }
+
+    #block {
+        border: 1px dotted rgb(0, 0, 0);
+        border-width:1px 0 1px 0;    
+    }
+
+    .titulo {
+        font-size: 16px;
+    }
+
+    .desc {
         font-size: 10px;
     }
 }
