@@ -121,15 +121,26 @@ a:hover {
     color: greenyellow;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+body {
+    height: 100%;
+    background-color: antiquewhite;
+}
+
 .e-font-icon-svg {
     height: 70px;
 }
 
 .fundo {
     width: 100%;
-    height: 300px;
-    position: relative;
-    bottom: 60px;
+    height: 260px;
 }
 
 .painel {
@@ -197,9 +208,8 @@ a:hover {
 }
 
 .texto2 span {
-    font-weight: bold;
     display: block;
-    font-size: xx-large;
+    font-size: larger;
     line-height: 1;
 }
 
