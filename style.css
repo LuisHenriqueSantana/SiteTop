@@ -121,77 +121,92 @@ a:hover {
     color: greenyellow;
 }
 
+.e-font-icon-svg {
+    height: 70px;
+}
+
 .fundo {
-    position: relative;
-    margin: auto;
-    text-align: center;
     width: 100%;
-    height: 250px;
-    bottom: 100px;
+    height: 300px;
+    position: relative;
+    bottom: 60px;
 }
 
-.back {
+.painel {
+    background-color: white;
     width: 90%;
-    background-color: white;
     height: 100%;
-    position: relative;
-    top: 20px;
     margin: auto;
+    display: block;
+    box-shadow: 1px 1px 21px rgba(0, 0, 0, 0.158);
 }
 
-.block {
-    position: relative;
-    display: inline-block;
-    width: 30%;
-    height: 90%;
-    top: 5%;
-    background-color: white;
-}
-
-#block {
-    border: 1px dotted rgb(0, 0, 0);
-    border-width:0 1px 0 1px ;    
-}
-
-.wrapper {
-    display: flex;
+.central {
+    display: inline-flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
     align-items: center;
-    width: 80%;
-    text-align: left;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: relative;
+}
+
+.block {   
+    width: 30%;
+    height: 80%;
+    display: inline-block;
+}
+
+.conteudo {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#conteudo {
+    border: 1px dotted black;
+    border-width:0 1px 0 1px;
 }
 
 .icon {
-    display: inline-block;
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-    background-color: #030F27; /* Cor de fundo do ícone */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #030F27;
+    width: 30%;
+    height: 60%;
     border-radius: 100%;
-    padding: 33px 35px 33px 35px; /* Ajuste do espaçamento interno */
-}
-
-.e-font-icon-svg {
-    position: relative;
-    top: 2px;
-    left: 3px;
-    height: 40px;
-    width: 40px;
     fill: white;
 }
 
 .texto2 {
     display: inline-block;
-    width: 50%;
+    text-align: left;
+    width: 45%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
 }
 
-.titulo {
-    font-size: 26px;
+.texto2 span {
+    font-weight: bold;
+    display: block;
+    font-size: xx-large;
+    line-height: 1;
 }
 
-.desc {
-    font-size: 16px;
+.texto2 p {
+    display: block;
+    font-weight: 100;
+    font-size: larger;
 }
 
 .avo {
@@ -325,40 +340,79 @@ a:hover {
     }
 
     .fundo {
-        margin: auto;
-        text-align: center;
         width: 100%;
-        height: 600px;
+        height: 500px;
     }
 
-    .back {
-        width: 90%;
-        background-color: white;
-        height: 80%;
-        position: relative;
-        margin: auto;
+    .central {
+        display: block;
+        text-align: center;
+        height: 40%;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .block {
-        position: relative;
+        width: 100%;
+        height: 80%;
         display: block;
+    }
+
+    .conteudo {
+        display: inline-flex;
         width: 90%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #conteudo {
+        border: 1px dotted black;
+        border-width: 1px 0px 1px 0px;
+    }
+        
+    .icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #030F27;
+        width: 15%;
         height: 30%;
-        top: 5%;
-        background-color: white;
-        margin: auto;
+        border-radius: 100%;
+        fill: white;
     }
 
-    #block {
-        border: 1px dotted rgb(0, 0, 0);
-        border-width:1px 0 1px 0;    
+    .e-font-icon-svg {
+        height: 20px;
     }
 
-    .titulo {
-        font-size: 16px;
+    .texto2 {
+        display: inline-block;
+        text-align: left;
+        width: 60%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+    }
+    
+    .texto2 span {
+        display: block;
+        font-size: larger;
+        line-height: 1;
+    }
+    
+    .texto2 p {
+        display: block;
+        font-weight: 100;
+        font-size: smaller;
     }
 
-    .desc {
-        font-size: 10px;
-    }
 }
