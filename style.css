@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    height: 100%;
+    background-color: bisque;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 180px;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    background-color: black;
+    width: 10%;
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+    width:100%;
+}
+
+.navegacao {
+    width: 80%;
+    font-size: 30px;
+}
+
+.navegacao ul {
+}
+
+.navegacao ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+a:hover {
+    transition: .3s;
+    color: green;
+    text-decoration: underline;
+}
+
+
+.avo {
+    text-align: center;
+    margin: auto;
+}
+
+.pai {
+    display: inline-block;
+    margin: 10px 15px;
+    width: 20%;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
+    transition: .9s;
+    border-radius: 20px;
+    position: relative;
+}
+
+.filho {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%) sepia(100%) opacity(0.2);
+    transition: .9s;
+}
+
+#bg1 {
+    background-image: url(zona-sul-sp-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.pai:hover .filho {
+    transition: .9s;
+    filter: none;
+    transform: scale(1.1);
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green; /* Cor inicial do texto */
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.9s;
+}
+
+.pai:hover .texto {
+    color: white;
+}
+
+@media (max-width: 750px){
+    .pai {
+        display: block;
+        margin: 10px auto;
+        width: 95%;
+        height: 150px;
+        overflow: hidden;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
+        transition: .9s;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .logo {
+        width: 50%;
+        height: 100%;
+    }
+
+    .navegacao {
+        display: none;
+    }   
+
+}
