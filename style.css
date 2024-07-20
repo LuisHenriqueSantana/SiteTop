@@ -63,6 +63,54 @@ a:hover {
     text-decoration: underline;
 }
 
+.menu-suspenso {
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-color: #030F27;
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.contato {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    fill: white;
+    transition: .3s;
+}
+
+.teste {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 15px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: .3s;
+}
+
+.menu-suspenso:hover .teste{
+    color: greenyellow;
+    transition: .3s;
+    fill: greenyellow;
+}
+
+.menu-suspenso:hover .contato {
+    transition: .3s;
+    fill: greenyellow;
+}
+
 .banner_ea {
     width: 100%;
     height: 700px;
@@ -119,19 +167,6 @@ a:hover {
 
 .verde {
     color: greenyellow;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
-
-body {
-    height: 100%;
-    background-color: antiquewhite;
 }
 
 .e-font-icon-svg {
@@ -294,6 +329,9 @@ body {
         display: none;
     }   
 
+    .atendimento {
+        display: none;
+    }
 
     .banner_ea {
         width: 100%;
