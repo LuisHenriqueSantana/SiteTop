@@ -500,4 +500,44 @@ a:hover {
         font-size: smaller;
     }
 
+    footer {
+        margin: 60px 0 0 0;
+        background-color: rgb(20, 20, 66);
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .rodape {
+    
+    }
+    
+    .logo2 img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .contato2 h1 {
+        margin: 20px 0;
+        font-size: 15px;
+    }
+    
+    .telef{
+        margin: 20px 0;
+    }
+    .email{
+        margin: 20px 0;
+    }
+    .endereco{
+        margin: 20px 0;
+    }
+    
+    .regioes h1 {
+        font-size: 20px;
+    }
+    
+    .regioes p {
+        margin: 4px 0;
+    }
+
 }
