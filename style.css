@@ -11,8 +11,26 @@ body {
     background-color: bisque;
 }
 
-a {
-    color: #fff;
+header {
+    height: 150px;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    height: 100%;
+  }
+
+  .logo img{
+    height: 150px;
+
+  }
+
+  a {
+    color: #000000;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -27,21 +45,6 @@ a {
     letter-spacing: 4px;
   }
   
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
-  }
-  
-  main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-  }
-  
   .nav-list {
     list-style: none;
     display: flex;
@@ -53,14 +56,14 @@ a {
   }
   
   .mobile-menu {
+    background-color: aquamarine;
     display: none;
-    cursor: pointer;
-  }
+}
   
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: black;
     margin: 8px;
     transition: 0.3s;
   }
@@ -548,19 +551,26 @@ a {
     body {
       overflow-x: hidden;
     }
+
+    .mobile-menu {
+      background-color: aquamarine;
+      display: block;
+  }
+
     .nav-list {
+      z-index: -1;
       position: fixed;
-      top: 8vh;
+      top: 22vh;
       right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
+      width: 100%;
+      height: 20vh;
+      background: white;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      transform: translateX(100%);
+      transform: translateY(-100%);
       transition: transform 0.3s ease-in;
-    }
+  }
     .nav-list li {
       margin-left: 0;
       opacity: 0;
@@ -571,9 +581,8 @@ a {
   }
   
   .nav-list.active {
-    z-index: 3;
     transform: translateX(0);
-}
+  }
   
   @keyframes navLinkFade {
     from {
