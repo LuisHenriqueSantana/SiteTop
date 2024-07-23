@@ -11,6 +11,29 @@ body {
     background-color: bisque;
 }
 
+.botao_flutuante {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--default-background-color);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #b0fc01;
+}
+
+.whatsapp svg{
+    fill: #030f27;
+    height: 30px;
+    top: 2px;
+    position: relative;
+}
+
 header {
     height: 150px;
     width: 100%;
@@ -430,8 +453,10 @@ header {
     }
 
     .fundo {
+        bottom: 70px;
         width: 100%;
         height: 500px;
+        position: relative;
     }
 
     .central {
@@ -563,7 +588,7 @@ header {
       top: 148px;
       right: 0;
       width: 100%;
-      height: 20%;
+      height: 0%;
       background: white;
       flex-direction: column;
       align-items: center;
@@ -581,10 +606,11 @@ header {
   }
   
   .nav-list.active {
+    height: 20%;
     transform: translateX(0);
     z-index: 4;
     position: absolute;
-  }
+}
   
   @keyframes navLinkFade {
     from {
