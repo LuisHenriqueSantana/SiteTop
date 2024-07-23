@@ -582,6 +582,7 @@ header {
   
   .nav-list.active {
     transform: translateX(0);
+    z-index: 4;
   }
   
   @keyframes navLinkFade {
