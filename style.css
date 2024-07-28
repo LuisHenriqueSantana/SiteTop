@@ -759,3 +759,51 @@ body {
 .numero_ {position: relative;left: 2px;font-size: 20px;font-weight: bold;}
 
 .categoria_ {font-size: 18px;font-weight: 300;}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+.slide-track {
+    overflow-x: hidden;
+    display: flex;
+    width: calc(250px*14);
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track:hover {
+    overflow-x: hidden; 
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+img {
+    width: 100%;
+    transition: transform 1s;
+}
+img:hover {
+    transform: translateZ(20px);
+}
