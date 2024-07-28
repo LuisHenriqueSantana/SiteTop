@@ -808,18 +808,15 @@ header {
     display: grid;
     place-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .slide-track {
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     width: calc(250px*14);
     animation: scroll 20s linear infinite;
-}
-
-.slide-track:hover {
-    overflow-x: hidden; 
-    animation-play-state: paused;
 }
 
 @keyframes scroll {
@@ -843,7 +840,4 @@ header {
 img {
     width: 100%;
     transition: transform 1s;
-}
-img:hover {
-    transform: translateZ(20px);
 }
