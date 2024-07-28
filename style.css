@@ -191,6 +191,13 @@ header {
     padding: 20px;
     width: 30%;
     font-size: 30px;
+    transition: .3s;
+}
+
+.cta:hover {
+    background-color: green;
+    transition: .3s;
+    color: white;
 }
 
 .verde {
@@ -638,20 +645,7 @@ header {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-}
-
-body {
-    height: 100%;
-    background-color: bisque;
-}
-
-.container {
+  .container {
     text-align: center;
     margin: auto;
 }
@@ -681,11 +675,50 @@ body {
     transition: 0.9s;
 }
 
-#background1,
-#background2,
-#background3,
+#background1 {
+    background-image: url(desentupimento.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background2 {
+    background-image: url(hidrojateamento-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background3 {
+    background-image: url(limpeza-de-fossa.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 #background4 {
-    background-image: url(HidroAlfa.png);
+    background-image: url(dedetizacao-1024x574.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background5 {
+    background-image: url(limpeza-caixa-dagua.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background6 {
+    background-image: url(descupinizacao.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background7 {
+    background-image: url(desratizacao.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#background8 {
+    background-image: url(limpeza-caixa-gordura.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -705,13 +738,20 @@ body {
     transition: color 0.9s;
 }
 
-#moreInfo1,
-#moreInfo2,
-#moreInfo3,
-#moreInfo4 {
+.infos {
+    font-size: 25px;
+}
+
+.moreInfo {
     color: black;
     font-size: 15px;
     font-weight: lighter;
+}
+
+.title {
+    font-size: 40px;
+    margin: 30px;
+    color: green;
 }
 
 @media (max-width: 750px) {
