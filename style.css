@@ -289,9 +289,34 @@ header {
     font-size: larger;
 }
 
-.avo {
-    text-align: center;
+.titulo1 {
+    margin: 60px auto;
+}
+
+.moreInfos {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.infoss {
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+    width: 50%;
     margin: auto;
+}
+
+.descccc {
+    font-weight: 200;
+    width: 70%;
+    margin: auto;
+}
+
+.avo {
+    padding: 20px 0px;
+    background-color: white;
+    text-align: center;
+    margin: 80px auto;
 }
 
 .pai {
