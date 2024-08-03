@@ -709,18 +709,21 @@ header {
 #background6 {
     background-image: url(descupinizacao.jpg);
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
 #background7 {
     background-image: url(desratizacao.jpg);
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
 #background8 {
     background-image: url(limpeza-caixa-gordura.jpg);
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
