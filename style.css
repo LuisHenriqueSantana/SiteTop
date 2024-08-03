@@ -856,3 +856,8 @@ img {
 #contato svg{
     fill: greenyellow;
 }
+
+.animate__animated.animate__fadeInRight {
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
